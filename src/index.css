@@ -54,7 +54,7 @@ font-family:'Courier New', Courier, monospace ;
 }
 
 .form-button:hover, .delete-button:hover {
-  background-color: lightskyblue;
+  background-color: rgb(107, 207, 235);
   color: white;
 }
 
