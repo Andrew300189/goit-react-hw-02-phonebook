@@ -8,13 +8,9 @@ class App extends Component {
   state = {
     contacts: [],
     filter: '',
-    name: '',
-    number: '',
   };
 
   addContact = (name, number) => {
-    const { contacts } = this.state;
-
     if (this.isContactExist(name)) {
       alert(`${name} is already in contacts.`);
       return;
@@ -42,7 +38,7 @@ class App extends Component {
   };
 
   render() {
-    const { name, number, contacts, filter } = this.state;
+    const { contacts, filter } = this.state;
 
     const filteredContacts = contacts.filter((contact) =>
       contact.name.toLowerCase().includes(filter.toLowerCase())
